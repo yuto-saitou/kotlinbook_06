@@ -30,7 +30,7 @@
                 targetProject="src/main/kotlin">
         </javaClientGenerator>
         <table tableName="%">
-        </table>aaa
+        </table>
     </context>
 </generatorConfiguration>
 
