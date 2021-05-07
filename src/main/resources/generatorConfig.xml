@@ -13,7 +13,7 @@
         </commentGenerator>
         <jdbcConnection
                 driverClass="com.mysql.jdbc.Driver"
-                connectionURL="jdbc:mysql://127.0.0.1:3308/attendance_practice"
+                connectionURL="jdbc:mysql://127.0.0.1:3306/attendance_practice"
                 userId="root"
                 password="mysql">
             <property name="nullCatalogMeansCurrent" value="true"/>
@@ -30,7 +30,7 @@
                 targetProject="src/main/kotlin">
         </javaClientGenerator>
         <table tableName="%">
-        </table>
+        </table>aaa
     </context>
 </generatorConfiguration>
 
