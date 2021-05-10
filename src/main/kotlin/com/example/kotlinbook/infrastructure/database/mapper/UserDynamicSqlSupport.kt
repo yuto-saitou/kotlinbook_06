@@ -3,7 +3,7 @@
  */
 package com.example.kotlinbook.infrastructure.database.mapper
 
-import com.book.manager.domain.enum.RoleType
+import com.example.kotlinbook.domain.enum.RoleType
 import java.sql.JDBCType
 import org.mybatis.dynamic.sql.SqlTable
 

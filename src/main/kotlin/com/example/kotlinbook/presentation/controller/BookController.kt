@@ -2,7 +2,7 @@ package com.example.kotlinbook.presentation.controller
 
 import com.example.kotlinbook.application.service.BookService
 import com.example.kotlinbook.presentation.form.BookInfo
-//import com.example.kotlinbook.presentation.form.GetBookDetailResponse
+import com.example.kotlinbook.presentation.form.GetBookDetailResponse
 import com.example.kotlinbook.presentation.form.GetBookListResponse
 import org.springframework.web.bind.annotation.CrossOrigin
 import org.springframework.web.bind.annotation.GetMapping
@@ -24,9 +24,9 @@ class BookController(
         return GetBookListResponse(bookList)
     }
 //
-//    @GetMapping("/detail/{book_id}")
-//    fun getDetail(@PathVariable("book_id") bookId: Long): GetBookDetailResponse {
-//        val book = bookService.getDetail(bookId)
-//        return GetBookDetailResponse(book)
-//    }
+    @GetMapping("/detail/{book_id}")
+    fun getDetail(@PathVariable("book_id") bookId: Long): GetBookDetailResponse {
+        val book = bookService.getDetail(bookId)
+        return GetBookDetailResponse(book)
+    }
 }
