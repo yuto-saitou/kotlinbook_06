@@ -13,7 +13,7 @@
         </commentGenerator>
         <jdbcConnection
                 driverClass="com.mysql.jdbc.Driver"
-                connectionURL="jdbc:mysql://127.0.0.1:3306/attendance_practice"
+                connectionURL="jdbc:mysql://127.0.0.1:3306/book_manager"
                 userId="root"
                 password="mysql">
             <property name="nullCatalogMeansCurrent" value="true"/>
@@ -22,15 +22,17 @@
             <property name="useJSR310Types" value="true"/>
         </javaTypeResolver>
         <javaModelGenerator
-                targetPackage="com.example._427demo.infrastructure.database.record"
+                targetPackage="com.example.kotlinbook.infrastructure.database.record"
                 targetProject="src/main/kotlin">
         </javaModelGenerator>
         <javaClientGenerator
-                targetPackage="com.example._427demo.infrastructure.database.mapper"
+                targetPackage="com.example.kotlinbook.infrastructure.database.mapper"
                 targetProject="src/main/kotlin">
         </javaClientGenerator>
         <table tableName="%">
-        </table>aaa
+            <columnOverride column="role_type" typeHandler="org.apache.ibatis.type.EnumTypeHandler"
+                            javaType="com.book.manager.domain.enum.RoleType"/>
+        </table>
     </context>
 </generatorConfiguration>
 
