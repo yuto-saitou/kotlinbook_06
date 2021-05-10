@@ -3,7 +3,7 @@
  */
 package com.example.kotlinbook.infrastructure.database.record
 
-import com.book.manager.domain.enum.RoleType
+import com.example.kotlinbook.domain.enum.RoleType
 
 data class UserRecord(
     var id: Long? = null,
